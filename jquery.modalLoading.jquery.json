@@ -1,0 +1,30 @@
+{
+    "name": "jquery.modalLoading",
+    "title": "jQuery modalLoading",
+    "description": "Creates a Loading Screen over your Page and allows you to choose a Holder Container.",
+    "keywords": [
+        "form",
+        "modal",
+        "loading",
+        "progress",
+        "splash"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Robson Martins",
+        "url": "https://github.com/robsoncombr"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "bugs": "https://github.com/robsoncombr/jquery.modalLoading/issues",
+    "homepage": "https://github.com/robsoncombr/jquery.modalLoading",
+    "docs": "https://github.com/robsoncombr/jquery.modalLoading#readme",
+    "download": "https://github.com/robsoncombr/jquery.modalLoading",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}

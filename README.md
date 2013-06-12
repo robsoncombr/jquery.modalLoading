@@ -3,7 +3,7 @@ jquery.modalLoading
 
 Copyright (c) 2013 Robson Martins Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
 
-modalLoading jQuery Plugin creates a Loading Screen over your Page and allows you to choose a holder container, so you can append the Modal Loading to the document.body ('body') or to a html-div object.
+modalLoading jQuery Plugin creates a Loading Screen over your Page and allows you to choose a Holder Container, so you can append the Modal Loading to the document.body ('body') or to a html-div object.
 
 Needed includes:
 
