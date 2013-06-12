@@ -12,11 +12,11 @@ Needed includes:
 
 Simple usage:
 
-	To create:
+To create:
 	
 	loading = $(selector).modalLoading(height);
 	
-	To Remove:
+To Remove:
 	
 	loading.remove();
  
