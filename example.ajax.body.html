@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+  <title>jQuery Modal Loading Plugin by Robson Martins - https://github.com/robsoncombr/jquery.modalLoading</title>
+
+  <meta name="author" content="">
+  <meta name="description" content="modalLoading jQuery Plugin creates a Loading screen over your page and it allows you to choose the holder container">
+
+  <style type="text/css">
+    html {
+      height: 100%;
+    }
+    body {
+      min-height: 100%;
+      margin-top: 0;
+      margin-left: 0;
+      background-color: #FFF;
+      color: #333;
+      font-family: 'Verdana';
+    }
+    #content {
+    }   
+    #header {
+      padding-top: 20px;
+      text-align: center;
+    }
+    #main {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    #footer {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div id="content">
+  <div id="header">
+    <h2>Welcome to the Modal Loading 'body' example page!</h2>
+  </div>
+  <div id="main">
+    <h4>Change 'dstUrl' variable with your project destination-url.</h4>
+  </div>
+  <div id="footer">
+    <h6>Copyright (c) 2013 Robson Martins Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)</h6>
+  </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/modalLoading.js"></script>
+
+<script type="text/javascript">
+    $.ajaxSetup({
+        error: function(jqXHR, exception) {
+            if (jqXHR.status === 0) {
+                console.log('.ajax error: Not connect. Verify Network.');
+            } else if (jqXHR.status == 404) {
+                console.log('.ajax error: [404] Requested page not found.');
+            } else if (jqXHR.status == 500) {
+                console.log('.ajax error: [500] Internal Server Error.');
+            } else if (exception === 'parsererror') {
+                console.log('.ajax error: Requested JSON parse failed.');
+            } else if (exception === 'timeout') {
+                console.log('.ajax error: Time out error.');
+            } else if (exception === 'abort') {
+                console.log('.ajax error: Ajax request aborted.');
+            } else {
+                console.log('.ajax error: Uncaught Error.\n' + jqXHR.responseText);
+            }
+        }
+    });
+
+    // Change with your project destination-url.
+    dstUrl = 'YOUR-URL-HERE';
+
+    $.ajax({
+      url: dstUrl,
+      dataType: 'html',
+      beforeSend: function(){
+        loading = $(document.body).modalLoading(100);
+        if (dstUrl == 'YOUR-URL-HERE') alert('Change dstUrl variable with your project destination-url.');
+      },
+      success: function(result){
+        $('#main').html(result)
+      },
+      complete: function(){
+        loading.remove();
+      },
+      async: true
+    });
+</script>
+
+</body>
+</html>

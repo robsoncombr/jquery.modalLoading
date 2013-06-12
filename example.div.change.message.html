@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  
+  <title>jQuery Modal Loading Plugin by Robson Martins - https://github.com/robsoncombr/jquery.modalLoading</title>
+
+  <meta name="author" content="">
+  <meta name="description" content="modalLoading jQuery Plugin creates a Loading screen over your page and it allows you to choose the holder container">
+
+  <style type="text/css">
+    html {
+      height: 100%;
+    }
+    body {
+      min-height: 100%;
+      margin-top: 0;
+      margin-left: 0;
+      background-color: #FFF;
+      color: #333;
+      font-family: 'Verdana';
+    }
+    #content {
+    }
+    #header {
+      padding-top: 20px;
+      text-align: center;
+    }
+    #main {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    #footer {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div id="content">
+  <div id="header">
+    <h2>Welcome to the Modal Loading 'body' example page!</h2>
+  </div>
+  <div id="main">
+    <h4>I hope you enjoy it!</h4>
+  </div>
+  <div id="footer">
+    <h6>Copyright (c) 2013 Robson Martins Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)</h6>
+  </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/modalLoading.js"></script>
+
+<script type="text/javascript">
+  loading = $('#main').modalLoading(0, 'Wait...');
+
+    // your-code-here
+  console.log('loading... removing in 3 seconds...');
+    // your-code-here
+
+    // used Timeout to create a delay... you can simply call:
+    // loading.remove();
+  setTimeout(function() { loading.remove(); }, 3000);
+</script>
+
+</body>
+</html>
