@@ -6,8 +6,12 @@
         "form",
         "modal",
         "loading",
+        "load",
         "progress",
-        "splash"
+        "splash",
+        "ajax",
+        "jquery",
+        "dom"
     ],
     "version": "1.0.0",
     "author": {
