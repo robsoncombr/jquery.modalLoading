@@ -8,7 +8,7 @@ modalLoading jQuery Plugin creates a Loading screen over your page and it allows
 Needed includes:
 
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script type="text/javascript" src="js/modalLoading.js"></script>
+	<script type="text/javascript" src="modalLoading.js"></script>
 
 Simple usage:
 
