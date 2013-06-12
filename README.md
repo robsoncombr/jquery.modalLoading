@@ -11,10 +11,14 @@ Needed includes:
 <script type="text/javascript" src="js/modalLoading.js"></script>
 
 Simple usage:
-- create:
-loading = $(selector).modalLoading(height);
-- remove:
-loading.remove();
+
+	To create:
+	
+	loading = $(selector).modalLoading(height);
+	
+	To Remove:
+	
+	loading.remove();
  
 Examples:
 
@@ -31,5 +35,5 @@ Examples:
 	loading.remove();
 
 Notes:
-	- valid height value from 0 to 100, it represents the % of the holder container
-	- if no height is provided, it will assume the height of its holder container
+- valid height value from 0 to 100, it represents the % of the holder container
+- if no height is provided, it will assume the height of its holder container
