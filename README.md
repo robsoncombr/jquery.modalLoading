@@ -31,6 +31,9 @@ Examples:
 	$('#div-name').modalLoading();
 	loading.remove();
 
+	$(document.body).modalLoading(100, 'New Message...');
+	loading.remove();
+
 	$('#div-name').modalLoading(0, 'New Message...');
 	loading.remove();
 
